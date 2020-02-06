@@ -1,0 +1,16 @@
+apiVersion : apps/v1beta1
+kind: Deployment
+metadata:
+  name: hitenmistryrsazurevmchooserfrontendv 
+spec:
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: hitenmistryrsazurevmchooserfrontendv 
+    spec:
+      containers:
+        - name: hitenmistryrsazurevmchooserfrontendv 
+          image: hm3006conreg.azurecr.io/hitenmistryrsazurevmchooserfrontendv
+          ports:
+          - containerPort: 8080
